@@ -1,3 +1,14 @@
-<h1> Header </h1>
-<router-outlet></router-outlet>
-<h1>Footer</h1>
+<mat-toolbar fxLayout='row' fxLayoutAlign="space-evenly center" class="mat-elevation-z4 toolbar">
+  <!-- <div>j</div> -->
+  <button routerLink="/home" mat-button [class.mat-raised-button]="isHomeRaised" >Home</button>  
+  <button routerLink="/education" mat-button [class.mat-raised-button]="isEduRaised" >Education</button>
+  <button routerLink="/skills" mat-button [class.mat-raised-button]="isSkillsRaised" >Skills</button>
+  <button routerLink="/highlighted-projects"  mat-button [class.mat-raised-button]="isHiProjRaised" >Highlighted Projects</button>
+  <button routerLink="/work-experience"  mat-button [class.mat-raised-button]="isWrkExpRaised" >Work Experience</button>
+
+</mat-toolbar>
+
+<div class='grad' fxFlexFill fxLayout="column">
+  <router-outlet></router-outlet>
+</div>
+<footer>Footer</footer>

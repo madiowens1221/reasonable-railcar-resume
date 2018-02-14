@@ -6,16 +6,45 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'app/app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 
+//Material.Angular
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+//Covalent
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+//flex layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { TestpageComponent } from './testpage/testpage.component';
+import { SkillsComponent } from './skills/skills.component';
+import { HiprojComponent } from './hiproj/hiproj.component';
+import { EduComponent } from './edu/edu.component';
+import { WrkexpComponent } from './wrkexp/wrkexp.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TestpageComponent,
+    SkillsComponent,
+    HiprojComponent,
+    EduComponent,
+    WrkexpComponent
   ],
   imports: [
-    //Vendor Modules
+    //Angular Modules
     BrowserModule,
+    //Material Angular Modules
+    MatMenuModule,
+    MatButtonModule,
+    MatToolbarModule,
+    //Covalent Modules
+    BrowserAnimationsModule,
     //Custom Modules
-    AppRoutingModule
+    AppRoutingModule,
+    //flex layout
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

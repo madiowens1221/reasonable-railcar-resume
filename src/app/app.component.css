@@ -1,0 +1,7 @@
+.grad {
+    background: linear-gradient(rgba(245,245,245,0), rgb(112, 86, 151));
+}
+.toolbar {
+    height:44px;
+    background-color: rgb(245, 245, 245)
+}
