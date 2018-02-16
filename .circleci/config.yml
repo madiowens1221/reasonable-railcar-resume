@@ -6,7 +6,7 @@ jobs:
      steps:
        - checkout
        - run: npm i
-       - run: ng build 
+       - run: npm run build 
    deploy:
     docker:
        - image: circleci/node:8.9.4
