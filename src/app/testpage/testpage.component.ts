@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { TdFadeInOutAnimation } from '@covalent/core/common';
 
 @Component({
   selector: 'app-testpage',
   templateUrl: './testpage.component.html',
-  styleUrls: ['./testpage.component.css']
+  styleUrls: ['./testpage.component.css'],
+  animations: [
+    TdFadeInOutAnimation({duration:1500}),
+  ]
 })
+
 export class TestpageComponent implements OnInit {
-  issRaised: boolean = true;
+  triggerState: boolean = false;
   constructor() { }
 
   ngOnInit() {
+    this.triggerState = true;
   }
-
-  isRaised():void {
-    this.issRaised = !this.issRaised;
-  }
-
+ 
 }

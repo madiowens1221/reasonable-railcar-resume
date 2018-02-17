@@ -10,8 +10,8 @@ import { WrkexpComponent } from '../wrkexp/wrkexp.component'
 
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
-    {path: 'home', component: HomeComponent},
-    {path: 'education', component: EduComponent},
+    {path: 'home', component: HomeComponent, data: {state: 'true'} },
+    {path: 'education', component: EduComponent, data: {state: 'false'} },
     {path: 'skills', component: SkillsComponent},
     {path: 'highlighted-projects', component: HiprojComponent},
     {path: 'work-experience', component: WrkexpComponent},

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 
 //Covalent
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -33,14 +34,16 @@ import { WrkexpComponent } from './wrkexp/wrkexp.component';
     WrkexpComponent
   ],
   imports: [
+    //Covalent Modules
+    BrowserAnimationsModule,
     //Angular Modules
     BrowserModule,
     //Material Angular Modules
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
-    //Covalent Modules
-    BrowserAnimationsModule,
+    MatCardModule,
+    
     //Custom Modules
     AppRoutingModule,
     //flex layout
