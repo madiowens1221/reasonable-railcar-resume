@@ -5,9 +5,6 @@ import { TdFadeInOutAnimation } from '@covalent/core/common';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations: [
-    TdFadeInOutAnimation({duration:15000}),
-  ]
 })
 export class HomeComponent implements OnInit  {
   fadeInText: boolean;
