@@ -1,8 +1,10 @@
 <button mat-raised-button color="accent" (click)="triggerState = !triggerState">Fade In</button>
-<div [@tdFadeInOut]="triggerState">
-  <mat-card>
-    <mat-card-title>Fade Card</mat-card-title>
-    <mat-card-content>Fade in or out with a click!</mat-card-content>
-    <mat-card-actions><button mat-raised-button color="primary" (click)="triggerState = !triggerState">Fade Out</button></mat-card-actions>
-  </mat-card>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div style="text-align:center;">
+  <button (click)="print()" mat-raised-button [@flyInOut]="triggerState" (@flyInOut.done)="triggerState = !triggerState">MyButton</button>
 </div>
