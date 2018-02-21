@@ -11,6 +11,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 //Covalent
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -43,7 +44,7 @@ import { WrkexpComponent } from './wrkexp/wrkexp.component';
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
-    
+    MatDividerModule,
     //Custom Modules
     AppRoutingModule,
     //flex layout
