@@ -1,10 +1,17 @@
-<button mat-raised-button color="accent" (click)="triggerState = !triggerState">Fade In</button>
+<button mat-raised-button color="accent" (click)="triggerState3 = triggerState2 = triggerState1 = triggerState = !triggerState">Fade In</button>
 <br>
 <br>
 <br>
 <br>
 <br>
 
-<div style="text-align:center;">
-  <button (click)="print()" mat-raised-button [@flyInOut]="triggerState" (@flyInOut.done)="triggerState = !triggerState">MyButton</button>
-</div>
+<!-- <div style="text-align:center;"> -->
+  
+  <button style="position: absolute; left:50%; top:50%;">MyButton</button>  
+  
+  <button style="position: absolute; left:50%; top:50%;" (click)="print()" mat-raised-button [@flyInOut]="{value: triggerState, params: {dist: '100', speed: '10000'}}" (@flyInOut.done)="triggerState = !triggerState">MyButton</button>
+  <button style="position: absolute; left:50%; top:50%;" (click)="print()" mat-raised-button [@flyInOut]="{value: triggerState1, params: {dist: '200', speed: '20000'}}" (@flyInOut.done)="triggerState1 = !triggerState1">MyButton</button>
+  <button style="position: absolute; left:50%; top:50%"  (click)="print()" mat-raised-button [@flyInOut]="{value: triggerState2, params: {dist: '275', speed: '30000'}}" (@flyInOut.done)="triggerState2 = !triggerState2">MyButton</button>
+  <button style="position: absolute; left:50%; top:50%;" (click)="print()" mat-raised-button [@flyInOut]="{value: triggerState3, params: {dist: '350', speed: '40000'}}" (@flyInOut.done)="triggerState3 = !triggerState3">MyButton</button>
+<!-- </div> -->
+<!-- {value: 'triggerState', params: {dist: '150px'}} -->

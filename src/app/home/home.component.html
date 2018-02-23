@@ -1,13 +1,5 @@
-<div class="block">Jeremy</div>
-<div class="block">Taghizadeh</div>
-
-<mat-card class="jt-home-card">
-    <mat-card-title>
-        Jeremy Taghizadeh
-        <mat-divider></mat-divider>
-    </mat-card-title>
-    
-    <mat-card-content>
-        Taghizadeh
-    </mat-card-content>
-</mat-card>
+<button style="position: absolute; left:50%; top:50%;" routerLink="/home" mat-raised-button >Home</button>
+<button style="position: absolute; left:50%; top:50%;" routerLink="/education"            mat-raised-button [@flyInOut]="{value: triggerState, params: {dist: '100', speed: '10000'}}" (@flyInOut.done)="triggerState = !triggerState">Education</button>
+<button style="position: absolute; left:50%; top:50%;" routerLink="/skills"               mat-raised-button [@flyInOut]="{value: triggerState1, params: {dist: '175', speed: '30000'}}" (@flyInOut.done)="triggerState1 = !triggerState1">skills</button>
+<button style="position: absolute; left:50%; top:50%;" routerLink="/highlighted-projects" mat-raised-button [@flyInOut]="{value: triggerState2, params: {dist: '250', speed: '40000'}}" (@flyInOut.done)="triggerState2 = !triggerState2">HilightedProjects</button>
+<button style="position: absolute; left:50%; top:50%;" routerLink="/work-experience"      mat-raised-button [@flyInOut]="{value: triggerState3, params: {dist: '325', speed: '40000'}}" (@flyInOut.done)="triggerState3 = !triggerState3">WorkExperience</button>
