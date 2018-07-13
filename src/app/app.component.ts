@@ -1,6 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { TdFadeInOutAnimation } from '@covalent/core/common';
+import { MatButtonModule, MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +7,10 @@ import { TdFadeInOutAnimation } from '@covalent/core/common';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  
+
 
   constructor() {
-    
-  }
 
+  }
 
 }
