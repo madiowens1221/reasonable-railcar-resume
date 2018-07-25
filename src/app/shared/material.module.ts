@@ -9,6 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatRadioModule} from '@angular/material/radio';
         MatCardModule,
         MatDividerModule,
         MatIconModule,
-        MatRadioModule
+        MatRadioModule,
+        MatSidenavModule
     ],
     providers: [],
 })
