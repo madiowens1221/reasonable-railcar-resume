@@ -1,0 +1,18 @@
+@import '../resume-theme';
+
+$primary: map-get($resume-theme, primary);
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: mat-color($primary);
+
+}
+
+.side-panel {
+    background-color: mat-color($primary, darker);
+
+}

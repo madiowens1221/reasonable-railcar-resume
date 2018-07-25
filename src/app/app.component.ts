@@ -8,7 +8,6 @@ import { MatButtonModule, MatButton } from '@angular/material/button';
 })
 export class AppComponent {
 
-
   constructor() {
 
   }

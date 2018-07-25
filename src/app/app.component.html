@@ -1,1 +1,29 @@
-<rp-timeline></rp-timeline>
+<mat-sidenav-container class="container" >
+    <mat-sidenav autosize class="side-panel" fxLayout="row"  fxLayoutGap="5px" mode="side" opened> 
+        <div fxLayout="column">
+            <button mat-button><mat-icon>home</mat-icon></button>
+            <button mat-button><mat-icon>pets</mat-icon></button>
+            <button mat-button><mat-icon>description</mat-icon></button>
+            <div fxFlex="1 1 0"></div>
+            <button mat-button (click)="side.toggle()" ><mat-icon>keyboard_arrow_left</mat-icon></button>
+        </div>
+        <mat-sidenav-container>
+            <mat-sidenav #side class="side-panel" mode="side" closed fxLayout="column"> 
+                    <div fxLayout="column">
+                            <button mat-button>Home</button>
+                            <button mat-button>Dogs</button>
+                            <button mat-button>Resume</button>
+                        </div>
+            </mat-sidenav>
+        </mat-sidenav-container>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-card color="primary" style="height: 200px; width: 200px;">
+            <mat-card-title>test title</mat-card-title>
+            <mat-card-content>test content</mat-card-content>
+            <button mat-raised-button color="accent">accent</button>
+            <button mat-raised-button color="primary">primary</button>
+            <button mat-raised-button color="warn">warn</button>
+        </mat-card>
+    </mat-sidenav-content>
+</mat-sidenav-container>
