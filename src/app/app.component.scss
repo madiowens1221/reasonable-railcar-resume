@@ -12,7 +12,15 @@ $primary: map-get($resume-theme, primary);
 
 }
 
-.side-panel {
-    background-color: mat-color($primary, darker);
+.rp-nav-main-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
+.rp-nav-button {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 1;
 }
