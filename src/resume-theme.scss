@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+
+$resume-primary: mat-palette($mat-blue-grey, 700, 100, 900);
+$resume-accent: mat-palette($mat-orange, 800, 100, A700);
+$resume-warn: mat-palette($mat-red);
+
+$resume-theme: mat-light-theme($resume-primary, $resume-accent, $resume-warn);
+
+
+

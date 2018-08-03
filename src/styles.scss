@@ -1,0 +1,15 @@
+@import 'resume-theme';
+
+@include mat-core();
+@include angular-material-theme($resume-theme);
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+app-root {
+    display: block;
+    height: 100%;
+    width: 100%;
+}

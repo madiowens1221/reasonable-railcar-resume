@@ -1,69 +1,39 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { Router, NavigationEnd } from '@angular/router';
-import { TdFadeInOutAnimation } from '@covalent/core/common';
-import {routerTransition} from './router-transition/router.animations';
+import { Component } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
-  selector: 'app-root',
+  selector: 'rp-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   animations: [
-    routerTransition
+    trigger('navState', [
+      state('true', style({
+        transform: 'translateX({{posX}}px) translateY({{posY}}px) scale(1) ',
+        opacity: 1
+      }), {params: {posX: '0', posY: '0'}}),
+      state('false', style({
+        transform: 'scale(0.5) ',
+        opacity: 0,
+        pointerEvents: 'none'
+      })),
+      transition('false => true', animate('200ms {{waitTime}}ms ease-in'), {params: {waitTime: '0'}}),
+      transition('true => false', animate('200ms ease-out'))
+    ]
+    )
   ]
 })
 export class AppComponent {
-  router: Router;
+  navState = false
 
-  isHomeRaised: boolean = true;
-  isEduRaised: boolean = false;
-  isSkillsRaised: boolean = false;
-  isHiProjRaised: boolean = false;
-  isWrkExpRaised: boolean = false;
+  constructor() {}
 
-  constructor(private _router: Router) {
-    this.router = _router;
-    this.router.events.subscribe(event => {
-      if(event instanceof NavigationEnd) {
-        this.checkRoute();
-      }
-    });
-  }
-
-  getState(outlet):boolean {
-    return outlet.activatedRouteData.state;
-  }
-
-  checkRoute() {
-    if(this.router.url === "/home")
-    {
-      this.isHomeRaised = true;
-
-      this.isEduRaised = this.isHiProjRaised = this.isSkillsRaised = this.isWrkExpRaised = false;
-    }
-    if(this.router.url === "/education")
-    {
-      this.isEduRaised = true;
-      this.isHiProjRaised = this.isHomeRaised = this.isSkillsRaised = this.isWrkExpRaised = false;
-      
-    }
-    if(this.router.url === "/skills")
-    {
-      this.isSkillsRaised = true;
-      this.isEduRaised = this.isHiProjRaised = this.isHomeRaised = this.isWrkExpRaised = false;
-      
-    }
-    if(this.router.url === "/highlighted-projects")
-    {
-      this.isHiProjRaised = true;
-      this.isEduRaised = this.isHomeRaised = this.isSkillsRaised = this.isWrkExpRaised = false;
-      
-    }
-    if(this.router.url === "/work-experience")
-    {
-      this.isWrkExpRaised = true;
-      this.isEduRaised = this.isHiProjRaised = this.isHomeRaised = this.isSkillsRaised = false;
-      
-    }
-  }
+ toggleNav() {
+  this.navState = !this.navState;
+ }
 }
