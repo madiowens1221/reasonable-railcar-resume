@@ -1,0 +1,18 @@
+hr {
+    width: 30%;
+}
+
+.rp-container {
+    // background-color: rgba(245, 245, 245, 0.5);
+    overflow-x: hidden;
+    background-image: url("../../assets/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rp-page-size {
+    min-width: 100vw; 
+    min-height: 100vh;
+}
