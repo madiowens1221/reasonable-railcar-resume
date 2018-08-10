@@ -7,16 +7,12 @@ hr {
     width: 35%;
 }
 
-.top-padding {
-    padding-top: 50px;
-}
-
 .rp-profile-container {
     min-height: 500px;
 }
 
 .rp-profile-header {
-    font-size: 300%; 
+    font-size: 48px; 
     margin-bottom: 20px;
     color: mat-color($primary); 
 }
@@ -36,7 +32,7 @@ hr {
 }
 
 .rp-profile-about-me-header {
-    font-size: 200%; 
+    font-size: 28px; 
     margin-bottom: 20px;
     color: mat-color($accent); 
 
@@ -60,7 +56,7 @@ hr {
 }
 
 .rp-profile-stats-header {
-    font-size: 200%; 
+    font-size: 28px; 
     margin-bottom: 20px;
     color: mat-color($accent);
 
