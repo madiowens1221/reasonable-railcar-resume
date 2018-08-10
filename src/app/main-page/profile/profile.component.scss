@@ -1,0 +1,75 @@
+@import '../../../resume-theme';
+
+$primary: map-get($resume-theme, primary);
+$accent: map-get($resume-theme, accent);
+
+hr {
+    width: 35%;
+}
+
+.top-padding {
+    padding-top: 50px;
+}
+
+.rp-profile-container {
+    min-height: 500px;
+}
+
+.rp-profile-header {
+    font-size: 300%; 
+    margin-bottom: 20px;
+    color: mat-color($primary); 
+}
+
+.rp-profile-sub-header {
+    width: 300px; 
+    text-align: center;
+    color: mat-color($primary, lighter); 
+}
+
+.rp-profile-content {
+    width: 35%;
+}
+
+.rp-profile-about-me {
+    max-width: 200px;
+}
+
+.rp-profile-about-me-header {
+    font-size: 200%; 
+    margin-bottom: 20px;
+    color: mat-color($accent); 
+
+}
+
+.rp-profile-about-me-content {
+    color: mat-color($primary, lighter);
+}
+
+.rp-profile-picture-circle {
+    background-color: mat-color($accent, lighter);
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    margin: 0px 15px 0px 15px;
+}
+
+.rp-profile.stats {
+    height: 183px; 
+    max-width: 200px;
+}
+
+.rp-profile-stats-header {
+    font-size: 200%; 
+    margin-bottom: 20px;
+    color: mat-color($accent);
+
+}
+
+.rp-profile-stats-content {
+    color: mat-color($primary, lighter);
+}
+
+b {
+    color: mat-color($primary) ;
+}
