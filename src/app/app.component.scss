@@ -13,13 +13,13 @@ $primary: map-get($resume-theme, primary);
 }
 
 .rp-nav-main-button {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
 }
 
 .rp-nav-button {
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 10px;
     z-index: 1;

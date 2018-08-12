@@ -1,0 +1,35 @@
+@import '../../../resume-theme';
+
+$primary: map-get($resume-theme, primary);
+$accent: map-get($resume-theme, accent);
+
+.rp-ab-header {
+    font-size: 48px; 
+    margin-bottom: 20px;
+    color: mat-color($primary); 
+}
+
+.rp-ab-sub-header {
+    width: 300px; 
+    text-align: center;
+    color: mat-color($primary, lighter); 
+}
+
+hr {
+    width: 35%;
+}
+
+.rp-ab-content {
+    width: 35%
+}
+
+.rp-ab-skills-header {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    color: mat-color($accent); 
+}
+
+.rp-ab-skills {
+
+}
+
