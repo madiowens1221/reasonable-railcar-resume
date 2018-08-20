@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
 import { SkillComponent } from './abilities/skill/skill.component';
+import { FeatureProjectsComponent } from './feature-projects/feature-projects.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { SkillComponent } from './abilities/skill/skill.component';
         ExperiencesComponent,
         AbilitiesComponent,
         SkillComponent,
+        FeatureProjectsComponent,
     ],
     imports: [
         CommonModule,

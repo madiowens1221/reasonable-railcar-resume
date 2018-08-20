@@ -2,5 +2,9 @@
   <div style="width: 150px;">
     <ng-content></ng-content>
   </div>
-  <mat-icon *ngFor="let i of range" color="accent">star</mat-icon>
+  <div *ngFor="let r of range; let i = index">
+    <mat-icon *ngIf="i <= rating" color="accent">star</mat-icon>
+    <mat-icon *ngIf="i > rating" style="color: lightgray">star</mat-icon>
+
+  </div>
 </div>

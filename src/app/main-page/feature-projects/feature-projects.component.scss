@@ -8,13 +8,13 @@ $accent: map-get($resume-theme, accent);
     padding-bottom: 50px;
 }
 
-.rp-ab-header {
+.rp-project-header {
     font-size: 48px; 
     margin-bottom: 20px;
-    color: mat-color($primary); 
+    color: rgb(248, 248, 248); 
 }
 
-.rp-ab-sub-header {
+.rp-project-sub-header {
     width: 300px; 
     text-align: center;
     color: mat-color($primary, lighter); 
@@ -24,17 +24,10 @@ hr {
     width: 35%;
 }
 
-.rp-ab-content {
+.rp-project-content {
     width: 35%
 }
 
-.rp-ab-skills-header {
-    font-size: 28px; 
-    margin-bottom: 20px;
-    color: mat-color($accent); 
+.mat-card {
+    margin: 10px 10px 10px 10px;
 }
-
-.rp-ab-skills {
-
-}
-

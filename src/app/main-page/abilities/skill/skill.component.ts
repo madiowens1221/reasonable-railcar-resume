@@ -11,10 +11,12 @@ export class SkillComponent implements OnInit {
 
   range: number[];
 
+
   constructor() { }
 
   ngOnInit() {
-    this.range = new Array<number>(this.rating);
+    this.range = new Array<number>(5);
+
   }
 
 }
