@@ -8,6 +8,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
 import { SkillComponent } from './abilities/skill/skill.component';
 import { FeatureProjectsComponent } from './feature-projects/feature-projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { FeatureProjectsComponent } from './feature-projects/feature-projects.co
         AbilitiesComponent,
         SkillComponent,
         FeatureProjectsComponent,
+        ContactComponent,
     ],
     imports: [
         CommonModule,
