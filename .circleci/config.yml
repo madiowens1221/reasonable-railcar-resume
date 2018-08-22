@@ -1,10 +1,12 @@
 version: 2
 jobs:
-   build:
-     docker:
-       - image: circleci/node:8.9.4
-     steps:
-       - checkout
-       - run: npm i
-       - run: npm run build 
-       - run: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+  build:
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run build 
+      - run: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+    branches:
+      only: master
