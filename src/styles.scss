@@ -3,6 +3,10 @@
 @include mat-core();
 @include angular-material-theme($resume-theme);
 
+.top-padding {
+    padding-top: 50px;
+}
+
 body {
     margin: 0;
     height: 100%;

@@ -10,6 +10,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
         MatDividerModule,
         MatIconModule,
         MatRadioModule,
-        MatSidenavModule
+        MatSidenavModule,
+        MatTooltipModule
     ],
     providers: [],
 })

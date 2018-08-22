@@ -1,0 +1,58 @@
+@import '../../../resume-theme';
+
+$primary: map-get($resume-theme, primary);
+$accent: map-get($resume-theme, accent);
+
+.rp-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rp-contact-header {
+    font-size: 48px; 
+    margin-bottom: 20px;
+    color: mat-color($primary); 
+}
+
+.rp-contact-sub-header {
+    width: 300px; 
+    text-align: center;
+    color: mat-color($primary, lighter); 
+}
+
+hr {
+    width: 35%;
+}
+
+.rp-contact-content {
+    width: 35%
+}
+
+.mat-icon {
+    margin-right: 5px;
+}
+
+.dont-break-out {
+    white-space: normal;
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+  
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
