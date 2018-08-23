@@ -16,6 +16,7 @@ $primary: map-get($resume-theme, primary);
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 1;
 }
 
 .rp-nav-button {
