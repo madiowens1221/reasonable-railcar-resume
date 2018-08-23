@@ -29,11 +29,12 @@ hr {
 
 .rp-profile-about-me {
     max-width: 200px;
+    margin-top: 20px;
 }
 
 .rp-profile-about-me-header {
     font-size: 28px; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: mat-color($accent); 
 
 }
@@ -47,25 +48,32 @@ hr {
     width: 250px; 
     height: 250px; 
     border-radius: 50%; 
-    margin: 0px 15px 0px 15px;
+    margin: 20px 15px 20px 15px;
 }
 
-.rp-profile.stats {
+.rp-profile-stats {
     height: 183px; 
     max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .rp-profile-stats-header {
     font-size: 28px; 
-    margin-bottom: 20px;
     color: mat-color($accent);
 
 }
 
 .rp-profile-stats-content {
     color: mat-color($primary, lighter);
+    margin-bottom: 5px;
 }
 
 b {
     color: mat-color($primary) ;
+}
+
+img {
+    width: 240px; 
+    height: 240px;
 }
