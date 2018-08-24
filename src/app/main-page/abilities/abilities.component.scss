@@ -1,40 +1,27 @@
 @import '../../../resume-theme';
 
-$primary: map-get($resume-theme, primary);
-$accent: map-get($resume-theme, accent);
-
-.rp-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.rp-ab-header {
-    font-size: 48px; 
-    margin-bottom: 20px;
-    color: mat-color($primary); 
-}
-
-.rp-ab-sub-header {
-    width: 300px; 
-    text-align: center;
-    color: mat-color($primary, lighter); 
-}
-
 hr {
     width: 35%;
+    margin: 30px 0
 }
 
-.rp-ab-content {
+.rp-ab-width {
     width: 35%
 }
 
 .rp-ab-skills-header {
     font-size: 28px; 
     margin-bottom: 20px;
-    color: mat-color($accent); 
-}
-
-.rp-ab-skills {
+    color: mat-color($resume-color-accent, 800); 
 
 }
 
+.rp-abilities-margin {
+    margin-top: 30px;
+}
+
+
+rp-skill {
+    font-family: 'Roboto Mono', monospace;
+    color: mat-color($resume-color-primary, 500);
+}

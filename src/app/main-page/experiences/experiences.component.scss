@@ -1,64 +1,53 @@
 @import '../../../resume-theme';
 
-$primary: map-get($resume-theme, primary);
-$accent: map-get($resume-theme, accent);
-
-.rp-exp-header {
-    font-size: 48px; 
-    margin-bottom: 20px;
-    color: rgb(248, 248, 248); 
-}
-
-.rp-exp-sub-header {
-    width: 300px; 
-    text-align: center;
-    color: mat-color($primary, lighter); 
-}
-
 hr {
     width: 35%;
+    margin: 30px 0 30px 0;
+}
+
+.rp-exp-width {
+    width: 35%;
+}
+
+.rp-education {
+    margin-bottom: 30px;
+}
+
+.rp-exp-title {
+    color: mat-color($resume-color-primary, 50);
+    font-family: "Roboto Mono", sans-serif;
+    h2 {
+        margin-bottom: 5px;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 21px;
+    }
+    p {
+        margin-top: 0;
+        font-weight: 300;
+        font-size: 13px;
+    }
 }
 
 .rp-exp-content {
-    width: 35%;
-}
-
-.rp-exp-edu-header {
-    font-size: 28px; 
-    margin-bottom: 20px;
-    color: mat-color($accent); 
-
-}
-
-.rp-exp-edu-content {
+    font-size: 17px;
+    font-family: 'Roboto Mono', sans-serif;
+    color: mat-color($resume-color-primary, 50);
+    font-weight: 500;
+    line-height: 2em;
     margin-top: 20px;
-    max-width: 400px;
+
+    div:nth-child(1) { 
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 2em;
+        width: 100%
+    }
+    div:nth-child(2) { 
+        font-size: 15px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
 }
 
-.rp-exp-uni-title {
-    font-size: 18px;
-}
 
-
-.rp-exp-work-header {
-    font-size: 28px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    color: mat-color($accent); 
-
-}
-
-.rp-exp-work-content {
-    margin-top: 20px;
-    max-width: 400px;
-
-}
-
-h2 {
-    margin-bottom: 5px;
-    margin-top: 20px;
-}
-
-p {
-    margin-top: 0;
-}
