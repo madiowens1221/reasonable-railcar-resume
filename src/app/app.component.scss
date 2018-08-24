@@ -1,6 +1,5 @@
 @import '../resume-theme';
 
-$primary: map-get($resume-theme, primary);
 
 .container {
     position: absolute;
@@ -8,7 +7,7 @@ $primary: map-get($resume-theme, primary);
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: mat-color($primary);
+    background-color: mat-color($resume-color-primary, 800);
 
 }
 
@@ -17,6 +16,10 @@ $primary: map-get($resume-theme, primary);
     top: 10px;
     left: 10px;
     z-index: 1;
+    background-color: mat-color($resume-color-accent, 50);
+    color: mat-color($resume-color-primary, 50);
+
+    
 }
 
 .rp-nav-button {
@@ -24,4 +27,6 @@ $primary: map-get($resume-theme, primary);
     top: 15px;
     left: 10px;
     z-index: 1;
+    background-color: mat-color($resume-color-accent, 50);
+    color: mat-color($resume-color-primary, 50);
 }

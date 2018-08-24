@@ -1,51 +1,64 @@
 @import '../../resume-theme';
 
-$primary: map-get($resume-theme, primary);
 
 hr {
-    width: 30%;
+    width: 35%;
+    border-width: 0.1px;
 }
 
 .rp-container {
     // background-color: rgba(245, 245, 245, 0.5);
     overflow-x: hidden;
-    background-image: url("../../assets/maxresdefault.jpg");
+    background-image: url("https://i.imgur.com/3KCHg01.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.rp-page-size {
+.rp-intro {
     min-width: 100vw; 
     min-height: 100vh;
-    background-color: mat-color($primary);
+    background-color: mat-color($resume-color-primary, 800);
 }
 
 .rp-profile {
-    background-color: rgb(248, 248, 248);
+    background-color: mat-color($resume-color-primary, 50);
 }
 
 .rp-experiences {
-    min-width: 100vw; 
-    min-height: 100vh;
-    background-color: mat-color($primary);
+    background-color: mat-color($resume-color-primary, 500);
 }
 
 .rp-abilities {
-    min-width: 100vw; 
-    min-height: 100vh;
-    background-color: rgb(248, 248, 248);
+    background-color: mat-color($resume-color-primary, 50);
 }
 
 .rp-project {
-    min-width: 100vw; 
-    min-height: 100vh;
-    background-color: mat-color($primary);
+    background-color: mat-color($resume-color-primary, 200);
 }
 
 .rp-contact {
-    min-width: 100vw; 
     min-height: 75vh;
-    background-color: mat-color($primary, darker);
+    background-color: mat-color($resume-color-primary, 500);
+}
+
+.rp-my-name {
+    font-size: 400%;
+    color: #f8f8f8;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.rp-my-title {
+    font-size: 185%;
+    color: #f8f8f8;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
+}
+
+.rp-mask {
+    background-color: rgba(27, 27, 27, 0.75);
 }

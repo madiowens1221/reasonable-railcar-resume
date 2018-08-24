@@ -1,10 +1,76 @@
 @import '~@angular/material/theming';
 
-$resume-primary: mat-palette($mat-blue-grey, 700, 200, 900);
-$resume-accent: mat-palette($mat-orange, 800, 200, A700);
-$resume-warn: mat-palette($mat-red);
+$resume-color-primary: (
+  50: #f8f8f8,
+  100: #e8e8e8,
+  200: #e2e3e4,
+  300: #797979,
+  400: #4c4b4b,
+  500: #303030,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  )
+);
 
-$resume-theme: mat-light-theme($resume-primary, $resume-accent, $resume-warn);
+$resume-color-accent: (
+  50: #ffa000,
+  100: #ffa000,
+  200: #ffa000,
+  300: #ffa000,
+  400: #ffa000,
+  500: #ffa000,
+  600: #ffa000,
+  700: #ffa000,
+  800: #ffa000,
+  900: #ffa000,
+  A100: #ffa000,
+  A200: #ffa000,
+  A400: #ffa000,
+  A700: #ffa000,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  )
+);
+
+$resume-palette-primary: mat-palette($resume-color-primary);
+$resume-palette-accent: mat-palette($resume-color-accent);
+$resume-palette-warn: mat-palette($mat-red);
+
+$resume-theme: mat-light-theme($resume-palette-primary, $resume-palette-accent, $resume-palette-warn);
 
 
 

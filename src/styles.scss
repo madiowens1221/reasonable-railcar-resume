@@ -1,10 +1,11 @@
-@import 'resume-theme';
+@import "resume-theme";
 
 @include mat-core();
 @include angular-material-theme($resume-theme);
 
-.top-padding {
+.padding {
     padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 body {
@@ -36,4 +37,29 @@ app-root {
     -webkit-hyphens: auto;
     hyphens: auto;
   
+}
+
+.rp-section-title {
+    font-size: 54px;
+    margin-bottom: 15px;
+    color: mat-color($resume-palette-accent, 50);
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
+}
+
+.rp-section-quote {
+    width: 300px;
+    text-align: center;
+    color: mat-color($resume-palette-primary, 300);
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.rp-section-subtitle {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: mat-color($resume-palette-accent, 50);
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
 }

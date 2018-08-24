@@ -1,26 +1,20 @@
 @import '../../../resume-theme';
 
-$primary: map-get($resume-theme, primary);
-$accent: map-get($resume-theme, accent);
-
 .rp-container {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.rp-contact-header {
-    font-size: 48px; 
-    margin-bottom: 20px;
-    color: mat-color($primary); 
+.rp-section-title {
+    color: mat-color($resume-color-primary, 50);
 }
 
-.rp-contact-sub-header {
-    width: 300px; 
-    text-align: center;
-    color: mat-color($primary, lighter); 
+.rp-section-quote {
+    color: mat-color($resume-color-primary, 50);    
 }
 
 hr {
+    margin: 30px 0;
     width: 35%;
 }
 
