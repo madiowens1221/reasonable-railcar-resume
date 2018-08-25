@@ -1,10 +1,5 @@
 @import '../../../resume-theme';
 
-.rp-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .rp-section-title {
     color: mat-color($resume-color-primary, 50);
 }
@@ -18,15 +13,9 @@ hr {
     width: 35%;
 }
 
-.rp-contact-content {
-    width: 35%
-}
-
 .mat-icon {
     margin-right: 5px;
 }
-
-
 
 img {
     width: 24px;

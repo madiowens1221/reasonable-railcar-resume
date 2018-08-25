@@ -1,25 +1,34 @@
-<div class="padding rp-profile-container" fxLayout="column" fxLayoutAlign="start center">
-  <div class="rp-section-title">Profile</div>
-  <div class="rp-section-quote">What up this is a small excerpt that i would fill in eventurally. but not today.</div>
-  <hr>
-  <div class="rp-profile-width" fxLayout.gt-md="row" fxLayout="column" fxLayoutAlign.gt-md="center start" fxLayoutAlign="center center">
-    <div class="rp-profile-about-me">
-      <div class="rp-section-subtitle">About Me</div>
-      <div class="rp-profile-content">Stuff about me i once did something and some other stuff lorem ipsum. That's what i'm saying though. This needs some!
-        And always some sort of question so that i can have different types of punctuation?
+<div class="padding">
+  <div fxLayout="column" fxLayoutAlign="start center">
+    <div class="rp-section-title">Profile</div>
+    <div class="rp-section-quote">What up this is a small excerpt that i would fill in eventurally. but not today.</div>
+    <hr ngStyle.lt-lg="width: 40%">
+  </div>
+  <div fxLayout="row">
+    <div fxFlex="30"></div>
+    <div fxFlex="40" fxLayout="row" fxLayoutAlign="space-between none" fxLayout.lt-xl="column" fxLayoutAlign.lt-xl="center center">
+
+      <div ngStyle.gt-lg="padding-right: 20px;" ngStyle.lt-xl="box-sizing: border-box; text-align: center; " class="rp-profile-about-me" >
+        <div class="rp-section-subtitle">About Me</div>
+        <div class="rp-profile-content">
+          Konichiwa! I'm a full stack developer who enjoys reading, video games, and long walks on the beach. I have two small dogs (shout out to Stitch and Wilson) and I currently reside in St. Louis, Missouri.
+        </div>
       </div>
-    </div>
-    <div class="rp-profile-picture-circle" fxLayout="row" fxLayoutAlign="center center">
-      <img src="../../../assets/Untitled-3.png">
-    </div>
-    <div class="rp-profile-stats" fxLayout="column"  >
-      <div class="rp-section-subtitle" >Stats</div>
-      <b> Name:</b>
-      <div class="rp-profile-content"> Jeremy Taghizadeh </div>
-      <b> Age:</b>
-      <div class="rp-profile-content">26</div>
-      <b> Constitution:</b>
-      <div class="rp-profile-content">87</div>
+
+      <div ngStyle.lt-xl="margin: 15px 0;" class="rp-profile-picture-circle" fxLayout="row" fxLayoutAlign="center center">
+        <img src="../../../assets/Untitled-3.png">
+      </div>
+
+      <div ngStyle.gt-lg="padding-left: 40px;" ngStyle.lt-xl="text-align: center;" class="rp-profile-stats" fxLayout="column">
+        <div class="rp-section-subtitle">Stats</div>
+        <b> Name:</b>
+        <div class="rp-profile-content"> Jeremy Taghizadeh </div>
+        <b> Age:</b>
+        <div class="rp-profile-content">26</div>
+        <b> Constitution:</b>
+        <div class="rp-profile-content">87</div>
+      </div>
+
     </div>
   </div>
 </div>

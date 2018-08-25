@@ -3,17 +3,24 @@
 
 hr {
     width: 35%;
-    border-width: 0.1px;
+    border-width: 0.5px;
+    margin: 15px 0;
 }
 
 .rp-container {
-    // background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.5);
     overflow-x: hidden;
     background-image: url("https://i.imgur.com/3KCHg01.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.rp-container-xs {
+    background: url("../../assets/bg-img-mobile.png");
+
+
 }
 
 .rp-intro {
@@ -49,7 +56,7 @@ hr {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 .rp-my-title {
