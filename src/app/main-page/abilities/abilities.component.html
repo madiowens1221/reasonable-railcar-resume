@@ -1,72 +1,81 @@
 <div class="padding">
-  <div fxLayout="column"  fxLayoutAlign="start center">
+  <div fxLayout="column" fxLayoutAlign="start center">
     <div class="rp-section-title">Abilities</div>
     <div class="rp-section-quote">What up this is a small excerpt that i would fill in eventurally. but not today.</div>
     <hr>
-    <div class="rp-ab-width">
-      <div class="rp-section-subtitle" ngStyle.lt-lg="text-align: center">
-        Skills
+  </div>
+  <div class="rp-abilities">
+    <div fxLayout.gt-md="row" fxLayout="column" fxLayoutAlign.lt-lg="center center">
+      <div fxFlex="30"></div>
+      <div fxFlex class="rp-section-subtitle">Skills</div>
+    </div>
+    <div fxLayout.gt-md="row" fxLayout.lt-lg="column" fxLayoutAlign.gt-md="start center" fxLayoutAlign.lt-lg="center center" ngStyle.xs="height: 530px">
+      <div fxFlex="30"></div>
+      <div>
+        <rp-skill [rating]="5">Angular</rp-skill>
+        <rp-skill [rating]="5">AngularJS</rp-skill>
+        <rp-skill [rating]="5">Vue</rp-skill>
+        <rp-skill [rating]="5">Javascript</rp-skill>
+        <rp-skill [rating]="5">Kotlin</rp-skill>
+        <rp-skill [rating]="4">Java</rp-skill>
+        <rp-skill [rating]="4">Spring</rp-skill>
+        <rp-skill [rating]="4">Gradle</rp-skill>
+        <rp-skill [rating]="4">Git</rp-skill>
+        <rp-skill [rating]="3">Docker</rp-skill>
+        <rp-skill [rating]="3">Bash</rp-skill>
       </div>
-      <div  fxLayout.gt-md="row" fxLayout.lt-lg="column" fxLayoutAlign="center center" ngStyle.xs="height: 530px">
-        <div fxFlex="50">
-          <rp-skill [rating]="5">Angular</rp-skill>
-          <rp-skill [rating]="5">AngularJS</rp-skill>
-          <rp-skill [rating]="5">Vue</rp-skill>
-          <rp-skill [rating]="5">Javascript</rp-skill>
-          <rp-skill [rating]="5">Kotlin</rp-skill>
-          <rp-skill [rating]="4">Java</rp-skill>
-          <rp-skill [rating]="4">Spring</rp-skill>
-          <rp-skill [rating]="4">Gradle</rp-skill>
-          <rp-skill [rating]="4">Git</rp-skill>
-          <rp-skill [rating]="3">Docker</rp-skill>
-          <rp-skill [rating]="3">Bash</rp-skill>
-        </div>
-        <div fxFlex="50">
-          <rp-skill [rating]="3">Firebase</rp-skill>
-          <rp-skill [rating]="3">Mongo</rp-skill>
-          <rp-skill [rating]="3">Mysql</rp-skill>
-          <rp-skill [rating]="2">Unity</rp-skill>
-          <rp-skill [rating]="2">C++</rp-skill>
-          <rp-skill [rating]="2">Sass</rp-skill>
-          <rp-skill [rating]="2">JUnit</rp-skill>
-          <rp-skill [rating]="2">Circle CI</rp-skill>
-          <rp-skill [rating]="1">GitLab CI</rp-skill>
-          <rp-skill [rating]="1">Azure</rp-skill>
-          <rp-skill [rating]="1">Cloud Foundry</rp-skill>
-        </div>
+      <div fxFlex="auto"></div>
+      <div>
+        <rp-skill [rating]="3">Firebase</rp-skill>
+        <rp-skill [rating]="3">Mongo</rp-skill>
+        <rp-skill [rating]="3">Mysql</rp-skill>
+        <rp-skill [rating]="2">Unity</rp-skill>
+        <rp-skill [rating]="2">C++</rp-skill>
+        <rp-skill [rating]="2">Sass</rp-skill>
+        <rp-skill [rating]="2">JUnit</rp-skill>
+        <rp-skill [rating]="2">Circle CI</rp-skill>
+        <rp-skill [rating]="1">GitLab CI</rp-skill>
+        <rp-skill [rating]="1">Azure</rp-skill>
+        <rp-skill [rating]="1">Cloud Foundry</rp-skill>
       </div>
-      <div class="rp-abilities-margin"></div>
-      <div class="rp-section-subtitle" ngStyle.lt-lg="text-align: center">
-        Tools
-      </div>
-      <div fxLayout.gt-md="row" fxLayout.lt-lg="column" fxLayoutAlign="center center" ngStyle.xs="height: 530px">
-        <div fxFlex="50">
-          <rp-skill [rating]="5">Angular</rp-skill>
-          <rp-skill [rating]="5">AngularJS</rp-skill>
-          <rp-skill [rating]="5">Vue</rp-skill>
-          <rp-skill [rating]="5">Javascript</rp-skill>
-          <rp-skill [rating]="5">Kotlin</rp-skill>
-          <rp-skill [rating]="4">Java</rp-skill>
-          <rp-skill [rating]="4">Spring</rp-skill>
-          <rp-skill [rating]="4">Gradle</rp-skill>
-          <rp-skill [rating]="4">Git</rp-skill>
-          <rp-skill [rating]="3">Docker</rp-skill>
-          <rp-skill [rating]="3">Bash</rp-skill>
-        </div>
-        <div fxFlex="50">
-          <rp-skill [rating]="3">Firebase</rp-skill>
-          <rp-skill [rating]="3">Mongo</rp-skill>
-          <rp-skill [rating]="3">Mysql</rp-skill>
-          <rp-skill [rating]="2">Unity</rp-skill>
-          <rp-skill [rating]="2">C++</rp-skill>
-          <rp-skill [rating]="2">Sass</rp-skill>
-          <rp-skill [rating]="2">JUnit</rp-skill>
-          <rp-skill [rating]="2">Circle CI</rp-skill>
-          <rp-skill [rating]="1">GitLab CI</rp-skill>
-          <rp-skill [rating]="1">Azure</rp-skill>
-          <rp-skill [rating]="1">Cloud Foundry</rp-skill>
-        </div>
-      </div>
+      <div fxFlex="30"></div>
     </div>
   </div>
+  <div class="rp-abilities">
+      <div fxLayout.gt-md="row" fxLayout="column" fxLayoutAlign.lt-lg="center center">
+        <div fxFlex="30"></div>
+        <div fxFlex class="rp-section-subtitle">Tools</div>
+      </div>
+      <div fxLayout.gt-md="row" fxLayout.lt-lg="column" fxLayoutAlign.gt-md="start center" fxLayoutAlign.lt-lg="center center" ngStyle.xs="height: 530px">
+        <div fxFlex="30"></div>
+        <div>
+          <rp-skill [rating]="5">Angular</rp-skill>
+          <rp-skill [rating]="5">AngularJS</rp-skill>
+          <rp-skill [rating]="5">Vue</rp-skill>
+          <rp-skill [rating]="5">Javascript</rp-skill>
+          <rp-skill [rating]="5">Kotlin</rp-skill>
+          <rp-skill [rating]="4">Java</rp-skill>
+          <rp-skill [rating]="4">Spring</rp-skill>
+          <rp-skill [rating]="4">Gradle</rp-skill>
+          <rp-skill [rating]="4">Git</rp-skill>
+          <rp-skill [rating]="3">Docker</rp-skill>
+          <rp-skill [rating]="3">Bash</rp-skill>
+        </div>
+        <div fxFlex="auto"></div>
+        <div>
+          <rp-skill [rating]="3">Firebase</rp-skill>
+          <rp-skill [rating]="3">Mongo</rp-skill>
+          <rp-skill [rating]="3">Mysql</rp-skill>
+          <rp-skill [rating]="2">Unity</rp-skill>
+          <rp-skill [rating]="2">C++</rp-skill>
+          <rp-skill [rating]="2">Sass</rp-skill>
+          <rp-skill [rating]="2">JUnit</rp-skill>
+          <rp-skill [rating]="2">Circle CI</rp-skill>
+          <rp-skill [rating]="1">GitLab CI</rp-skill>
+          <rp-skill [rating]="1">Azure</rp-skill>
+          <rp-skill [rating]="1">Cloud Foundry</rp-skill>
+        </div>
+        <div fxFlex="30"></div>
+      </div>
+    </div>
 </div>
